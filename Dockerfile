@@ -13,3 +13,5 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 COPY search_api.py .
 
+CMD ["python", "indexing_service.py"]
+CMD ["python", "search_api.py"]
